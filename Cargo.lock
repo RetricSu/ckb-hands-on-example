@@ -123,7 +123,7 @@ dependencies = [
  "ckb-crypto",
  "ckb-dao-utils",
  "ckb-error",
- "ckb-hash",
+ "ckb-hash 0.112.1",
  "ckb-jsonrpc-types",
  "ckb-pow",
  "ckb-rational",
@@ -242,7 +242,7 @@ dependencies = [
  "cfg-if",
  "ckb-error",
  "ckb-fixed-hash",
- "ckb-hash",
+ "ckb-hash 0.112.1",
  "ckb-occupied-capacity",
  "molecule",
  "numext-fixed-uint",
@@ -256,6 +256,15 @@ checksum = "25af660fc8746f7c756444e6aa47ede9a874206563b6a1ce1b230a5b86519392"
 dependencies = [
  "blake2b-ref",
  "blake2b-rs",
+]
+
+[[package]]
+name = "ckb-hash"
+version = "0.114.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "99970478850566472a03e5cc4d57e388bb7a8255771f4308b42036f0d8a623d8"
+dependencies = [
+ "blake2b-ref",
 ]
 
 [[package]]
@@ -337,7 +346,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5895b4799fbb7e537ef0a778493b8f8678284c2bb20b476edce3f3375d1c4aa1"
 dependencies = [
  "byteorder",
- "ckb-hash",
+ "ckb-hash 0.112.1",
  "ckb-types",
  "eaglesong",
  "log",
@@ -378,7 +387,7 @@ dependencies = [
  "byteorder",
  "ckb-chain-spec",
  "ckb-error",
- "ckb-hash",
+ "ckb-hash 0.112.1",
  "ckb-logger",
  "ckb-traits",
  "ckb-types",
@@ -428,7 +437,7 @@ dependencies = [
  "ckb-chain-spec",
  "ckb-crypto",
  "ckb-error",
- "ckb-hash",
+ "ckb-hash 0.112.1",
  "ckb-jsonrpc-types",
  "ckb-mock-tx-types",
  "ckb-resource",
@@ -462,7 +471,7 @@ dependencies = [
  "ckb-error",
  "ckb-fixed-hash",
  "ckb-gen-types",
- "ckb-hash",
+ "ckb-hash 0.112.1",
  "ckb-merkle-mountain-range",
  "ckb-occupied-capacity",
  "ckb-rational",
@@ -672,6 +681,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "812f314a99fb5b7f0f9d0a8388539578f83f3aca6a65f588b8dbeefb731e2f98"
 dependencies = [
  "siphasher",
+]
+
+[[package]]
+name = "hash-lock"
+version = "0.1.0"
+dependencies = [
+ "ckb-hash 0.114.0",
+ "ckb-std",
 ]
 
 [[package]]
