@@ -31,9 +31,13 @@ fn test_hash_lock() {
         .out_point(always_success_out_point)
         .build();
 
-    let preimage: Bytes = Bytes::from("this is my preimage");
-    println!("preimage: {:?}", preimage.to_vec());
+    let preimage: Bytes = Bytes::from("this is my secret preimage");
     let expected_hash = blake2b_256(preimage.clone().to_vec());
+    println!(
+        "preimage: {:?}, hash: {:?}",
+        preimage.to_vec(),
+        expected_hash
+    );
 
     let hash_lock_script = context
         .build_script(&hash_lock_out_point, Bytes::copy_from_slice(&expected_hash))
