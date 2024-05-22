@@ -234,9 +234,9 @@ function HashLock() {
           ? offCKB.lumosConfig.SCRIPTS["HASH_LOCK"]?.CODE_HASH
           : "Not Found, deploy script first."}
       </p>
-      <label htmlFor="Preimage-key">Preimage: </label>&nbsp;
+      <label htmlFor="Hash-key">Hash: </label>&nbsp;
       <input
-        id="Preimage-key"
+        id="Hash-key"
         type="text"
         value={hash}
         onChange={(e) => setHash(e.target.value)}
